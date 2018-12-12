@@ -31,5 +31,9 @@ namespace PrismUnityDemo
         {
             throw new NotImplementedException();
         }
+        public override string ToString()
+        {
+            return AccountNumber.ToString();
+        }
     }
 }
