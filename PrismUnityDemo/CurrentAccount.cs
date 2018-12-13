@@ -8,12 +8,12 @@ namespace PrismUnityDemo
 {
     public class CurrentAccount : IAccount
     {
-        public int AccountID { get; set; }
-        public long AccountNumber { get; set; }
-        public string Type { get; set; }
-        public string CustomerName { get; set; }
+        public int AccountID { get; set; } = 123;
+        public long AccountNumber { get; set; } = 9895318686;
+        public string Type { get; set; } = "Current Account";
+        public string CustomerName { get; set; } = "Sanu Antony";
         public double Balance { get; set; }
-        public double MinimumBalance { get; set; }
+        public double MinimumBalance { get; set; } = 2000;
 
         public void Deposit(double amount)
         {
@@ -24,7 +24,7 @@ namespace PrismUnityDemo
 
         public void DisplayCustomerDetails()
         {
-            Console.WriteLine("");
+            Console.WriteLine($"Customer name: {CustomerName} \nAccount Type : {Type}");
         }
 
         public void Withdraw(double amount)

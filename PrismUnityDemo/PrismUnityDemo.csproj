@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CurrentAccount.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="IAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IoCContainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
